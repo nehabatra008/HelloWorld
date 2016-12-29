@@ -1,0 +1,89 @@
+try {
+  Integer x = Integer.valueOf(myString);
+}
+Catch (exception e) {
+  // it's not an Integer, try something else
+}
+String a;    
+        Integer d = Integer.ValueOf(a);
+Map<Id,List<Survey_Question_vod__c>> newmapques = new map<Id,List<Survey_Question_vod__c>>();
+    for(Survey_Question_vod__c sq: newques)
+    {
+        if(!newmapques.containsKey(sq.Question_vod__c))
+            newmapques.put(sq.Question_vod__c, new list<Survey_Question_vod__c>{sq});
+        else
+            newmapques.get(sq.Question_vod__c).add(sq);
+    }
+
+
+
+
+
+map<ID, List<B__C>> tempMap = new map<Id , List<B__c>>();
+for(Parent_A__c tempA=[select id,name,(select name,Checkbox__c from B__r where Checkbox__c =True) from Parent_A__c]){
+    
+    
+    for(B__c tempB: tempA.B__r){
+        Integer nameInInt = integer.valueOf(tempB.name);
+        if(Math.mod(nameInInt , 2)){
+
+
+
+            if(tempA.containsKey(tempA.id)){
+                list<b__c> bList  = tempMap.get(tempA.id);
+                bList.add(tempB);
+                tempMap.put(tempA.id,bList);
+
+
+
+
+            }else{
+                list<b__c> newBList = new list<b__c>();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+map<ID, List<B__C>> tempMap = new map<Id , List<B__c>>();
+for(Parent_A__c tempA=[select id,name,(select name,Checkbox__c from B__r where Checkbox__c =True) from Parent_A__c]){
+    
+    
+    for(B__c bObject : tempA.B__r){
+        Integer nameInInt = integer.valueOf(bobject.name);
+        if(Math.mod(nameInInt , 2) ==0){
+            if(tempA.containsKey(tempA.id)){
+                list<b__c> getList  = tempMap .get(tempA.id);
+                getList.add(bobject);
+                tempMap .put(tempA.id , getList);
+            }else{
+                list<b__c> getList = new list<b__c>();
+                getList.add(bObject);   
+                tempMap .put(tempA.id , getList);
+            }
+        }
+    }
+                newBList .add(tempB);   
+               	tempMap.put(tempA.id,newBList );
+
+            }
+        }
+    }
